@@ -349,5 +349,13 @@ async def start(ctx):
             webhook.add_embed(wembed)
             webhook.execute()
 
-
+@bot.command(aliases=["src", "code"])
+async def sourcecode(ctx):
+    e = discord.Embed(
+        title="Source Code",
+        description="You can find my source code [here](https://github.com/SockYeh/StoopidBot)",
+        color=0xFFA500,
+    )
+    await ctx.send(embed=e)
+            
 bot.run(TOKEN)
