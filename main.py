@@ -340,7 +340,7 @@ async def start(ctx):
                     wembed.set_color(0xCC00FF)
                     wembed.add_embed_field(
                         name="Chance",
-                        value=f"1 in 57k ({hpchance.content}%)",
+                        value=f"1 in 58k ({hpchance.content}%)",
                         inline=True,
                     )
                 case _:
